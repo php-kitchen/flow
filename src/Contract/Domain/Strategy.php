@@ -9,5 +9,12 @@ namespace PHPKitchen\Flow\Contract\Domain;
  * @since 1.0
  */
 interface Strategy {
-    public function call();
+    /**
+     * Strategy body. This method implements strategy algorithm.
+     *
+     * @return mixed result of a strategy or void.
+     *
+     * @since 1.0
+     */
+    public function do();
 }
